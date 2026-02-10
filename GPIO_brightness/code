@@ -1,0 +1,13 @@
+from gpiozero import PWMOutputDevice
+from time import sleep
+
+pwm= PWMOutputDevice(17)
+
+while True:
+  led= int(input("brightness 0~100: "))
+  pwm.value= led/ 100.0
+  sleep(1)
+
+
+
+//use software implement PWM function
