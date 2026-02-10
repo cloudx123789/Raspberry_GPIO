@@ -1,0 +1,22 @@
+from gpizero import LED
+from time import sleep
+
+a= LED(17)
+b= LED(27)
+
+while True:
+  la= int(input("0 or 1 for a: "))
+  lb= int(input("0 0r 1 for b: "))
+  if la>1 or la<0 or lb>1 or lb<0:
+      print("Out Of Range")
+  if la==1:
+    a.on()
+  else:
+    a.off()
+  
+  if lb==1:
+    b.on()
+  else:
+    b.off()
+
+  sleep(2)
