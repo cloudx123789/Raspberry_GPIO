@@ -5,3 +5,5 @@ led= PWMLED(18)
 while True:
   bright= int(input("Brightness 0~100: "))
   led.value= bright/ 100.0
+
+//use hardware implement PWM function
